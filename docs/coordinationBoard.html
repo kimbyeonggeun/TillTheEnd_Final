@@ -36,11 +36,34 @@
                 <div class="navbar-nav">
                     <a href="" class="nav-link me-4 fs-5">Login</a>
                     <a href="" class="nav-link me-4 fs-5">Cart</a>
-                    <a href="" class="nav-link me-4 fs-5">Search</a>
+                    <a href="#modalTarget" data-bs-toggle="modal" class="nav-link me-4 fs-5">Search</a>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- modal -->
+    <div class="modal fade" id="modalTarget">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="modal-header" style="color: white;">
+                    Search
+                    <button class="btn btn-secondary close_button" data-bs-dismiss="modal"
+                        style="border: 0; background-color: rgba(0, 0, 0, 0);">
+                        <span class="material-symbols-outlined">
+                        close
+                        </span></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <input type="text" class="form-control me-3">
+                    <a href="" style="color: white;">
+                        <span class="material-symbols-outlined">search</span>
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    
     <main style="margin-top:7rem;" class="container">
         <div class="row row-cols-1 row-cols-md-4">
             <a href="" class="col">
@@ -49,7 +72,7 @@
                     <div class="card-body">
                         <div class="card-title">제목</div>
                         <div class="card-text">등록자</div>
-                        <div class="card-text">조회수</div>
+                        <div class="card-text-viewcount">조회수 : </div>
                     </div>
                 </div>
             </a>
@@ -59,7 +82,7 @@
                     <div class="card-body">
                         <div class="card-title">제목</div>
                         <div class="card-text">등록자</div>
-                        <div class="card-text">조회수</div>
+                        <div class="card-text-viewcount">조회수 : </div>
                     </div>
                 </div>
             </a>
@@ -69,7 +92,7 @@
                     <div class="card-body">
                         <div class="card-title">제목</div>
                         <div class="card-text">등록자</div>
-                        <div class="card-text">조회수</div>
+                        <div class="card-text-viewcount">조회수 : </div>
                     </div>
                 </div>
             </a>
@@ -79,7 +102,7 @@
                     <div class="card-body">
                         <div class="card-title">제목</div>
                         <div class="card-text">등록자</div>
-                        <div class="card-text">조회수</div>
+                        <div class="card-text-viewcount">조회수 : </div>
                     </div>
                 </div>
             </a>
@@ -89,12 +112,31 @@
                     <div class="card-body">
                         <div class="card-title">제목</div>
                         <div class="card-text">등록자</div>
-                        <div class="card-text">조회수</div>
+                        <div class="card-text-viewcount">조회수 : </div>
                     </div>
                 </div>
             </a>
         </div>
     </main>
+    <div class="container d-flex justify-content-center">
+        <nav aria-label="Page navigation example" class="">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </div>
 
     <footer class="border-top p-5 text-secondary bg-light" style="font-size: 0.8rem">
         <div class="">
