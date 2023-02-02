@@ -47,11 +47,16 @@
 .progressbar::-webkit-progress-bar {
   background: #f0f0f0;
   border-radius: 10px;
-  box-shadow: inset 3px 3px 10px #ccc;
+  box-shadow: inset 3px 3px 10px #f0f0f0;
 }
 .progressbar::-webkit-progress-value {
   border-radius: 10px;
   background: yellow;
   background: -webkit-linear-gradient(to right, #818181, #818181);
   background: linear-gradient(to right, #818181, #818181);
+}
+.image {
+  height: 60rem;
+  /* 이미지 조절 */
+  object-fit: cover;
 }
