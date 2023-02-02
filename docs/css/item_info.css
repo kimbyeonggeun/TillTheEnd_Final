@@ -56,7 +56,7 @@
   background: linear-gradient(to right, #818181, #818181);
 }
 .image {
-  height: 60rem;
+  height: 50rem;
   /* 이미지 조절 */
   object-fit: cover;
 }
