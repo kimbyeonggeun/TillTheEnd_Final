@@ -3,3 +3,9 @@ a {
     color : black;
 }
 
+.card-image {
+    height: 60rem;
+    /* 이미지 조절 */
+    object-fit: cover;
+}
+
