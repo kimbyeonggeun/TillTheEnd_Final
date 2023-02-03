@@ -16,28 +16,50 @@
 </head>
 <body>
   <!-- 코디 상세 게시판 -->
-  <header class="">
-    <nav class="navbar navbar-expand fixed-top bg-light">
-        <div style="width: 100%;" class="d-flex justify-content-between align-items-center">
-            <div class="navbar-nav">
-                <a class="nav-link ms-4 fs-5" class="" href="shop.html">상품</a>
-                <a class="nav-link fs-5" href="list.html">리스트</a>
-                <div class="dropdown nav-item">
-                    <a href="" class="nav-link fs-5 dropdown-toggle" data-bs-toggle="dropdown">게시판</a>
-                    <div class="dropdown-menu">
-                        <a href="./coordinationBoard.html" class="dropdown-item">코디 게시판</a>
-                        <a href="./faq.html" class="dropdown-item">FAQ</a>
-                        <a href="./announcement.html" class="dropdown-item">공지사항</a>
+  <header class="fixed-top bg-white border-bottom">
+    <nav class="navbar navbar-expand ">
+        <div class="d-flex  align-items-center">
+            <a href="./index.html" style="font-weight: 1000;" class="navbar-brand fs-4 ms-2">브랜드명</a> 
+        </div>
+        <div class="w-100">
+            <div class="short-div">
+                <div style="width: 100%;" class="d-flex justify-content-between align-items-center">
+                    <div class="navbar-nav">
+                        <a class="nav-link ms-4 fs-5" class="" href="shop.html">상품</a>
+                        <div class="dropdown nav-item">
+                            <a href="" class="nav-link fs-5 dropdown-toggle" data-bs-toggle="dropdown">게시판</a>
+                            <div class="dropdown-menu">
+                                <a href="./coordinationBoard.html" class="dropdown-item">코디 게시판</a>
+                                <a href="./faq.html" class="dropdown-item">FAQ</a>
+                                <a href="./announcement.html" class="dropdown-item">공지사항</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav">
+                        <a href="login.html" class="nav-link me-4 fs-5 d-flex align-items-center ">
+                            <span class="material-symbols-outlined">person</span>
+                        </a>
+                        <a href="" class="nav-link me-4 fs-5 d-flex align-items-center">
+                            <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                        </a>
+                        <a href="#modalTarget" data-bs-toggle="modal" class="nav-link d-flex align-items-center me-4 fs-5" style="text-align: c;">
+                            <span class="material-symbols-outlined">search</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="d-inline-flex  align-items-center">
-                <a href="./index.html" style="font-weight: 1000;" class="navbar-brand fs-4 ">브랜드명</a> 
-            </div>
-            <div class="navbar-nav">
-                <a href="" class="nav-link me-4 fs-5">Login</a>
-                <a href="" class="nav-link me-4 fs-5">Cart</a>
-                <a href="#modalTarget" data-bs-toggle="modal" class="nav-link me-4 fs-5">Search</a>
+            <div class="short-div d-flex justify-content-between  navbar-nav">
+                <div class="d-flex">
+                  <a class="nav-link ms-4 me-2" href="shop.html">BEST</a>
+                  <a class="nav-link me-2" href="shop.html">상의</a>
+                  <a class="nav-link me-2" href="shop.html">아우터</a>
+                  <a class="nav-link me-2" href="shop.html">바지</a>
+                  <a class="nav-link me-2" href="shop.html">신발</a>
+                  <a class="nav-link me-2" href="shop.html">모자</a>
+                  <a class="nav-link me-2" href="shop.html">가방</a>
+                </div>
+                <div>
+                </div>
             </div>
         </div>
     </nav>
@@ -45,7 +67,7 @@
 <!-- modal -->
 <div class="modal fade" id="modalTarget">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.7);">
             <div class="modal-header" style="color: white;">
                 Search
                 <button class="btn btn-secondary close_button" data-bs-dismiss="modal"
