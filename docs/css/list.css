@@ -14,8 +14,9 @@ a > :hover {
   color: black;
 }
 
-#faq {
+#head {
   padding: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 #category a {
@@ -26,4 +27,40 @@ a > :hover {
 
 main {
   margin-top: 60px;
+}
+.page-link {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #555;
+  font-weight: 900;
+  background-color: #f1f1f1;
+  border-color: #ccc;
+}
+
+.page-link:focus,
+.page-link:hover {
+  color: #000;
+  background-color: #fafafa;
+  border-color: #ccc;
+}
+.pagination a {
+  border: 0px;
+}
+#search > input {
+  font-size: 15px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#search {
+  margin-bottom: 15%;
 }
