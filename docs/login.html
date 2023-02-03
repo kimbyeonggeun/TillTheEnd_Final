@@ -13,6 +13,7 @@
   />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
     <header class="">
@@ -63,42 +64,18 @@
         </div>
     </div>
     <main style="height:500px;margin-top:65px;">
-        <div class="h-25"></div>
-        <div class="row mt-5">
-            <div class="col-12 d-flex justify-content-center mb-2">
-              <div>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="userId"
-                  placeholder="Id"
-                  id="id"
-                />
-              </div>
-            </div>
-
-            <div class="col-12 d-flex justify-content-center">
-              <div>
-                <input
-                  type="password"
-                  class="form-control"
-                  name="userPassword"
-                  placeholder="Password"
-                  id="password"
-                />
-              </div>
-            </div>
-            <div id="errorLogin">
-
-            </div>
-
-            <div class="col-12 d-flex justify-content-center mt-5">
-              <div>
-                <button type="submit" class="btn bg-warning">로그인</button>
-                <a href="" class="btn btn-warning">회원가입</a>
-              </div>
-            </div>
+      <div class="container h-25"></div>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <input class="w-25 p-2" type="text" placeholder="ID">
         </div>
+        <div class="d-flex justify-content-center">
+          <input class="w-25 p-2" type="password" placeholder="PW">
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="w-25 mt-3 btn btn-dark rounded-pill">LOGIN</div>
+        </div>
+      </div>
     </main>
     <footer class="border-top p-5 text-secondary bg-light" style="font-size: 0.8rem">
         <div class="">
