@@ -3,6 +3,10 @@ a {
     color : black;
 }
 
+.card-image-top {
+    height: 30rem;
+    object-fit: cover;
+}
 .card-image {
     height: 60rem;
     /* 이미지 조절 */
