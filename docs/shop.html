@@ -11,57 +11,66 @@
 		  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 		  crossorigin="anonymous"
 		/>
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
-		<!-- <link rel="stylesheet" href="./css/main.css"> -->
-		<link rel="stylesheet" href="./css/shop.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="stylesheet" href="./css/main.css">
 	</head>
 	<body>
 		<header class="">
-			<!-- <div class="navbar fixed-top bg-black d-flex justify-content-center align-items-center" 
-			style="color: white; height: 30px;">
-				<div style="font-size: 12px; font-weight: 700;">테스트</div>
-			</div> -->
-			<!-- style="margin-top: 25px;" -->
-			<nav class="navbar fixed-top bg-light">
-				<div style="width: 100%;" class="d-flex justify-content-center">
-					<div class="d-inline-flex align-items-center">
-						<a href="" style="font-weight: 1000;" class="navbar-brand fs-4">브랜드명</a> 
-					</div>
-				</div>
-			</nav>
-			<!-- style="margin: 30px;" -->
-			<nav class="navbar fixed-top">
+			<nav class="navbar navbar-expand fixed-top bg-light">
 				<div style="width: 100%;" class="d-flex justify-content-between align-items-center">
-					<div class="d-inline">
-						<a class="btn ms-4 fs-5" class="" href="shop.html">상품</a>
-						<a class="btn fs-5" href="list.html">리스트</a>
-						<!-- <a class="btn fs-5" href="list.html">게시판</a> -->
-						<a href="" class="btn fs-5">코디 게시판</a>
-						<a href="list.html" class="btn fs-5">FAQ</a>
-						<a href="list.html" class="btn fs-5">공지사항</a>
-						<!-- <a href="" class="btn fs-5 dropdown-toggle" data-bs-toggle="dropdown">게시판</a>
-						<div class="dropdown-menu">
-							<a href="/menu/seeUserSurveyServlet" class="dropdown-item">코디 게시판</a>
-							<a href="/menu/removeSurveyPageServlet" class="dropdown-item">FAQ</a>
-							<a href="/menu/removeSurveyPageServlet" class="dropdown-item">공지사항</a>
-						</div> -->
+					<div class="navbar-nav">
+						<a class="nav-link ms-4 fs-5" class="" href="shop.html">상품</a>
+						<a class="nav-link fs-5" href="list.html">리스트</a>
+						<div class="dropdown nav-item">
+							<a href="" class="nav-link fs-5 dropdown-toggle" data-bs-toggle="dropdown">게시판</a>
+							<div class="dropdown-menu">
+								<a href="./coordinationBoard.html" class="dropdown-item">코디 게시판</a>
+								<a href="/menu/removeSurveyPageServlet" class="dropdown-item">FAQ</a>
+								<a href="/menu/removeSurveyPageServlet" class="dropdown-item">공지사항</a>
+							</div>
+						</div>
 					</div>
-					<!-- 사이드 메뉴 미완 -->
-					<div class="d-inline-flex flex-row align-items-center">
-						
-						<a href="" class="btn me-4 fs-5">Login</a>
-						<a href="" class="btn me-4 fs-5">Cart</a>
-						<a href="" class="btn me-4 fs-5">Search</a>
+					<div class="d-inline-flex  align-items-center">
+						<a href="./index.html" style="font-weight: 1000;" class="navbar-brand fs-4 ">브랜드명</a> 
+					</div>
+					<div class="navbar-nav">
+						<a href="" class="nav-link me-4 fs-5">Login</a>
+						<a href="" class="nav-link me-4 fs-5">Cart</a>
+						<a href="#modalTarget" data-bs-toggle="modal" class="nav-link me-4 fs-5">Search</a>
 					</div>
 				</div>
 			</nav>
 		</header>
-		<main style="margin-top:60px">
+		<!-- modal -->
+		<div class="modal fade" id="modalTarget">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content" style="background-color: rgba(0, 0, 0, 0.2);">
+					<div class="modal-header" style="color: white;">
+						Search
+						<button class="btn btn-secondary close_button" data-bs-dismiss="modal"
+							style="border: 0; background-color: rgba(0, 0, 0, 0);">
+							<span class="material-symbols-outlined">
+							close
+							</span></button>
+					</div>
+					<div class="modal-body d-flex align-items-center">
+						<input type="text" class="form-control me-3">
+						<a href="" style="color: white;">
+							<span class="material-symbols-outlined">search</span>
+						</a>
+					</div>
+				</div>    
+			</div>
+		</div>
+		<main class="mb-4" style="margin-top:60px">
 
 			<div class="container">
-				<div>카테고리</div>
+				<div class="pt-4 pb-4">shop > 남성</div>
+				
+				<!-- 베스트 상품 리스트 -->
+				<div class="fs-5 mb-3">베스트 상품 리스트</div>
 				<div class="row">
-					<a href="" class="col col-3 mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop1.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -71,7 +80,51 @@
 							</div>
 						</div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
+						<div class="card" style="">
+							<img class="card-img-top" src="./refer/shop_img/shop3.jpg" alt="Card image cap">
+							<div class="card-body">
+							  <div class="card-title">브랜드명</div>
+							  <div class="card-text">의류명</div>
+							  <div class="card-text">가격</div>
+							</div>
+						</div>
+					</a>
+					<a href="item_info.html" class="col-3 mb-3">
+						<div class="card" style="">
+							<img class="card-img-top" src="./refer/shop_img/shop5.jpg" alt="Card image cap">
+							<div class="card-body">
+							  <div class="card-title">브랜드명</div>
+							  <div class="card-text">의류명</div>
+							  <div class="card-text">가격</div>
+							</div>
+						</div>
+					</a>
+					<a href="item_info.html" class="col-3 mb-3">
+						<div class="card" style="">
+							<img class="card-img-top" src="./refer/shop_img/shop7.jpg" alt="Card image cap">
+							<div class="card-body">
+							  <div class="card-title">브랜드명</div>
+							  <div class="card-text">의류명</div>
+							  <div class="card-text">가격</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- 일반 상품 리스트 -->
+				<div class="fs-5 mt-5 mb-3">상품 리스트</div>
+				<div class="row">
+					<a href="item_info.html" class="col-3 mb-3">
+						<div class="card" style="">
+							<img class="card-img-top" src="./refer/shop_img/shop1.jpg" alt="Card image cap">
+							<div class="card-body">
+							  <div class="card-title">브랜드명</div>
+							  <div class="card-text">의류명</div>
+							  <div class="card-text">가격</div>
+							</div>
+						</div>
+					</a>
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop2.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -81,7 +134,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop3.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -91,7 +144,7 @@
 							</div>
 					    </div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop4.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -101,7 +154,7 @@
 							</div>
 					    </div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop5.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -111,7 +164,7 @@
 							</div>
 					    </div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop6.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -121,7 +174,7 @@
 							</div>
 					    </div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop7.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -131,7 +184,7 @@
 							</div>
 					    </div>
 					</a>
-					<a href="" class="col mb-3">
+					<a href="item_info.html" class="col-3 mb-3">
 						<div class="card" style="">
 							<img class="card-img-top" src="./refer/shop_img/shop8.jpg" alt="Card image cap">
 							<div class="card-body">
@@ -142,6 +195,26 @@
 					    </div>
 					</a>
 				</div>
+			</div>
+			<!-- pagination -->
+			<div class="container d-flex justify-content-center mt-4">
+				<nav aria-label="Page navigation example" class="">
+					<ul class="pagination">
+					  <li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+						  <span aria-hidden="true">&laquo;</span>
+						</a>
+					  </li>
+					  <li class="page-item"><a class="page-link" href="#">1</a></li>
+					  <li class="page-item"><a class="page-link" href="#">2</a></li>
+					  <li class="page-item"><a class="page-link" href="#">3</a></li>
+					  <li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+						  <span aria-hidden="true">&raquo;</span>
+						</a>
+					  </li>
+					</ul>
+				  </nav>
 			</div>
 		</main>
 		<footer class="border-top p-5 text-secondary bg-light" style="font-size: 0.8rem">
