@@ -18,12 +18,9 @@
         border: 1px solid gray;
       }
       #left-column {
-        display:inline-block;
-        width:100px;
+        border: 1px solid red;
       }
       #right-column {
-        display:inline-block;
-        width:800px;
       }
     </style>
   </head>
@@ -99,9 +96,12 @@
   </div>
     <main style="margin-top: 8rem">
     <div class="container">
-      <div class="d-flex align-items-top">
-        <div id="left-column">왼쪽컬럼</div>
-        <div id="right-column">오른쪽컬럼
+      <div class="d-flex align-items-start">
+        <div id="left-column" class="m-4">
+          <div><a href="#">구매내역</a></div>
+          <div><a href="#">개인정보수정</a></div>
+        </div>
+        <div id="right-column" class="">
           <div>구매내역</div>
           <hr>
           <!-- 구매내역 1개단위 -->
@@ -112,27 +112,26 @@
             <div>종류: 청바지</div>
             <div>모델번호: J342</div>
             <div>가격: 45,000원</div>
-            <div>mypage>개인정보수정</div>
+            
           </div>
           <hr>
           <div> 
-            <div>주문일자: 2023.1.23.</div>
+            <div>주문일자: 2023.1.27.</div>
             <div>주문상품</div>
-            <div>브랜드: 리바이스</div>
-            <div>종류: 청바지</div>
-            <div>모델번호: J342</div>
-            <div>가격: 45,000원</div>
-            <div>mypage>개인정보수정</div>
+            <div>브랜드: 지오다노</div>
+            <div>종류: 셔츠</div>
+            <div>모델번호: S324</div>
+            <div>가격: 27,000원</div>
+            
           </div>
           <hr>
           <div> 
-            <div>주문일자: 2023.1.23.</div>
+            <div>주문일자: 2023.2.4.</div>
             <div>주문상품</div>
-            <div>브랜드: 리바이스</div>
-            <div>종류: 청바지</div>
-            <div>모델번호: J342</div>
-            <div>가격: 45,000원</div>
-            <div>mypage>개인정보수정</div>
+            <div>브랜드: 탑탠</div>
+            <div>종류: 코트</div>
+            <div>모델번호: C634</div>
+            <div>가격: 123,000원</div>
           </div>
           <hr>
         </div>
