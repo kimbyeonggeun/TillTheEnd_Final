@@ -19,9 +19,11 @@
       }
       #left-column {
         /* border: 1px solid red; */
-
+        width: 13%
       }
       #right-column {
+        /* border: 1px solid red; */
+        width: 70%
       }
     </style>
   </head>
@@ -98,46 +100,62 @@
     <main style="margin-top: 8rem">
     <div class="container">
       <div class="d-flex align-items-stretch">
-        <div id="left-column" class="me-5">
+        <div id="left-column" class="me-3 pe-3 border-end">
           <div><a href="#">구매내역</a></div>
           <div><a href="#">개인정보수정</a></div>
         </div>
         <div id="right-column" class="">
-          <div>구매내역</div>
-          <hr>
-          <!-- 구매내역 1개단위 -->
-          <div> 
-            <div>주문일자: 2023.1.23.</div>
-            <div>주문상품</div>
-            <div>브랜드: 리바이스</div>
-            <div>종류: 청바지</div>
-            <div>모델번호: J342</div>
-            <div>가격: 45,000원</div>
-            
+          <div class="fs-5 mb-3">구매내역</div>
+          <!-- 구매내역 1개단위 start -->
+          <div class="border rounded p-3 mb-3">
+            <div class="mb-3 fs-5">2023.1.23. 주문</div>
+            <div class="d-flex"> 
+              <div class="w-25 me-3">
+                <img src="./refer/mypage/shop1.jpg" alt="" class="w-100">
+              </div>
+              <div>
+                <div>브랜드: 리바이스</div>
+                <div>종류: 청바지</div>
+                <div>모델번호: J342</div>
+                <div>가격: 45,000원</div>
+              </div>
+            </div>
           </div>
-          <hr>
-          <div> 
-            <div>주문일자: 2023.1.27.</div>
-            <div>주문상품</div>
-            <div>브랜드: 지오다노</div>
-            <div>종류: 셔츠</div>
-            <div>모델번호: S324</div>
-            <div>가격: 27,000원</div>
-            
+          <!-- 구매내역 1개단위 end -->
+          <div class="border rounded p-3  mb-3">
+            <div class="mb-3 fs-5">2023.1.27. 주문</div>
+            <div class="d-flex"> 
+              <div class="w-25 me-3">
+                <img src="./refer/mypage/shop2.jpg" alt="" class="w-100">
+              </div>
+              <div>
+                <div>브랜드: 지오다노</div>
+                <div>종류: 셔츠</div>
+                <div>모델번호: S324</div>
+                <div>가격: 27,000원</div>
+              </div>
+            </div>
           </div>
-          <hr>
-          <div> 
-            <div>주문일자: 2023.2.4.</div>
-            <div>주문상품</div>
-            <div>브랜드: 탑탠</div>
-            <div>종류: 코트</div>
-            <div>모델번호: C634</div>
-            <div>가격: 123,000원</div>
+          <div class="border rounded p-3  mb-3">
+            <div class="mb-3 fs-5">2023.2.4. 주문</div>
+            <div class="d-flex"> 
+              <div class="w-25 me-3">
+                <img src="./refer/mypage/shop3.jpg" alt="" class="w-100">
+              </div>
+              <div>
+                <div>브랜드: 탑탠</div>
+                <div>종류: 코트</div>
+                <div>모델번호: C634</div>
+                <div>가격: 123,000원</div>
+              </div>
+            </div>
           </div>
-          <hr>
         </div>
       </div>
-
+      <div class="d-flex justify-content-center mb-3">
+        <button class="btn btn-dark me-2">이전</button>
+        <button class="btn btn-dark">다음</button>
+      </div>
     </div>
     </main>
 
