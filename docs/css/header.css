@@ -1,0 +1,18 @@
+#gnb li ul {
+  display: none;
+  width: 100%;
+  left: 0;
+}
+
+#gnb li:hover > a {
+  border-bottom: 3px solid black;
+}
+
+#gnb li:hover ul {
+  display: block;
+  border: 1px solid black;
+}
+
+#gnb li ul li:hover a {
+  border-bottom: 3px solid black;
+}

@@ -60,3 +60,8 @@
   /* 이미지 조절 */
   object-fit: cover;
 }
+select {
+  border: 0;
+  outline: none;
+  appearance: none;
+}

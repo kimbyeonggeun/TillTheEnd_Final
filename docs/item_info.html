@@ -15,47 +15,49 @@
     <link rel="stylesheet" href="./css/item_info.css" />
   </head>
   <body>
-    <header class="">
-      <!-- 검은색 줄 표시 -->
-      <!-- <div class="navbar fixed-top bg-black d-flex justify-content-center align-items-center" 
-        style="color: white; height: 30px;">
-            <div style="font-size: 12px; font-weight: 700;">테스트</div>
-        </div> -->
-      <!-- style="margin-top: 25px;" -->
-
-      <!-- <nav class="navbar fixed-top bg-light">
-            <div style="width: 100%;" class="d-flex justify-content-center">
-                <div class="d-inline-flex  align-items-center">
-                    <a href="./index.html" style="font-weight: 1000;" class="navbar-brand fs-4 ">브랜드명</a> 
+    <header class="fixed-top bg-white border-bottom">
+      <nav class="navbar navbar-expand">
+        <div class="d-flex align-items-center">
+          <a href="./index.html" style="font-weight: 1000" class="navbar-brand fs-4 ms-2">브랜드명</a>
+        </div>
+        <div class="w-100">
+          <div class="short-div">
+            <div style="width: 100%" class="d-flex justify-content-between align-items-center">
+              <div class="navbar-nav">
+                <a class="nav-link ms-4 fs-5" class="" href="shop.html">상품</a>
+                <div class="dropdown nav-item">
+                  <a href="" class="nav-link fs-5 dropdown-toggle" data-bs-toggle="dropdown">게시판</a>
+                  <div class="dropdown-menu">
+                    <a href="./coordinationBoard.html" class="dropdown-item">코디 게시판</a>
+                    <a href="./faq.html" class="dropdown-item">FAQ</a>
+                    <a href="./announcement.html" class="dropdown-item">공지사항</a>
+                  </div>
                 </div>
-            </div>
-        </nav> -->
-      <nav class="navbar navbar-expand fixed-top bg-light">
-        <div style="width: 100%" class="d-flex justify-content-between align-items-center">
-          <div class="navbar-nav">
-            <a class="nav-link ms-4 fs-5" class="" href="shop.html">상품</a>
-            <a class="nav-link fs-5" href="list.html">리스트</a>
-            <!-- <a class="btn fs-5" href="list.html">게시판</a> -->
-            <!-- <a href="" class="btn fs-5">코디 게시판</a>
-                    <a href="list.html" class="btn fs-5">FAQ</a>
-                    <a href="list.html" class="btn fs-5">공지사항</a> -->
-            <!-- 드롭다운 -->
-            <div class="dropdown nav-item">
-              <a href="" class="nav-link fs-5 dropdown-toggle" data-bs-toggle="dropdown">게시판</a>
-              <div class="dropdown-menu">
-                <a href="./coordinationBoard.html" class="dropdown-item">코디 게시판</a>
-                <a href="./faq.html" class="dropdown-item">FAQ</a>
-                <a href="./announcement.html" class="dropdown-item">공지사항</a>
+              </div>
+              <div class="navbar-nav">
+                <a href="login.html" class="nav-link me-4 fs-5 d-flex align-items-center">
+                  <span class="material-symbols-outlined">person</span>
+                </a>
+                <a href="shoppingcart.html" class="nav-link me-4 fs-5 d-flex align-items-center">
+                  <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                </a>
+                <a href="#modalTarget" data-bs-toggle="modal" class="nav-link d-flex align-items-center me-4 fs-5" style="text-align: c">
+                  <span class="material-symbols-outlined">search</span>
+                </a>
               </div>
             </div>
           </div>
-          <div class="d-inline-flex align-items-center">
-            <a href="./index.html" style="font-weight: 1000" class="navbar-brand fs-4">브랜드명</a>
-          </div>
-          <div class="navbar-nav">
-            <a href="" class="nav-link me-4 fs-5">Login</a>
-            <a href="" class="nav-link me-4 fs-5">Cart</a>
-            <a href="#modalTarget" data-bs-toggle="modal" class="nav-link me-4 fs-5">Search</a>
+          <div class="short-div d-flex justify-content-between navbar-nav">
+            <div class="d-flex">
+              <a class="nav-link ms-4 me-2" href="shop.html">BEST</a>
+              <a class="nav-link me-2" href="shop.html">상의</a>
+              <a class="nav-link me-2" href="shop.html">아우터</a>
+              <a class="nav-link me-2" href="shop.html">바지</a>
+              <a class="nav-link me-2" href="shop.html">신발</a>
+              <a class="nav-link me-2" href="shop.html">모자</a>
+              <a class="nav-link me-2" href="shop.html">가방</a>
+            </div>
+            <div></div>
           </div>
         </div>
       </nav>
@@ -63,7 +65,7 @@
     <!-- modal -->
     <div class="modal fade" id="modalTarget">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.7)">
           <div class="modal-header" style="color: white">
             Search
             <button class="btn btn-secondary close_button" data-bs-dismiss="modal" style="border: 0; background-color: rgba(0, 0, 0, 0)">
@@ -79,6 +81,7 @@
         </div>
       </div>
     </div>
+    <!-- 헤더 여기까지 복사해야함 -->
     <!-- modal-img-1 -->
     <div class="modal fade" id="modal-img-1">
       <div class="modal-dialog modal-dialog-centered">
@@ -115,6 +118,7 @@
       <div id="wrapper" style="width: 1200px; margin-left: auto; margin-right: auto">
         <div id="info">
           <div class="row row-cols-2">
+            <!-- carousel -->
             <div class="image" style="height: 950px">
               <div id="carouselControlId" class="carousel slide" data-bs-ride="carousel" style="width: 566px; text-align: center">
                 <div class="carousel-inner">
@@ -139,6 +143,7 @@
                 </button>
               </div>
             </div>
+            <!-- 가격정보 -->
             <div id="price-info">
               <div id="item-info">
                 <div id="name">상품명</div>
@@ -154,7 +159,7 @@
                       <th scope="row" style="display: block">SIZE</th>
                       <td style="display: block">
                         <select name="" id="">
-                          <option value="*">--- [필수] 옵션을 선택해 주세요 ---</option>
+                          <option value="*">--- [필수] 사이즈를 선택해 주세요 ---</option>
                           <option value="**" disabled>------------------</option>
                           <option value="24">24</option>
                           <option value="25">25</option>
@@ -180,6 +185,7 @@
               </div>
             </div>
           </div>
+          <!-- 상세정보 -->
           <div id="item-info">
             <div>상품 상세 정보칸입니다.</div>
           </div>
@@ -187,6 +193,7 @@
         <div id="review-qna">
           <hr />
           <div id="review-rate">
+            <!-- review -->
             <div class="row row-cols-2">
               <div style="width: 80%; padding-left: 30px">REVIEW (1)</div>
               <div style="width: 20%; text-align: right; padding-right: 30px">
@@ -194,6 +201,7 @@
               </div>
             </div>
             <hr />
+            <!-- 별점 -->
             <div class="row row-cols-2">
               <div style="text-align: center">
                 <div>
@@ -218,6 +226,7 @@
               </div>
             </div>
             <hr />
+            <!-- 리뷰들 -->
             <div id="review1" class="mt-1 ms-3">
               <div style="display: flex; align-items: center">
                 <span class="material-symbols-outlined" style="color: #ffc107; font-variation-settings: 'FILL' 1"> grade </span>
