@@ -13,3 +13,30 @@ a {
     object-fit: cover;
 }
 
+.mainImg1 {
+    height: 70rem;
+    width: 70rem;
+    object-fit: cover;
+
+}
+
+.mainImg_parent {
+    position: relative;
+}
+
+.mainImg2 {
+    width: 40rem;
+    height: 70rem;
+    object-fit: cover;
+}
+
+
+.mainImg1_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate( -50%, -50% );
+    color: white;
+}
