@@ -29,7 +29,7 @@
                   <a href="" class="nav-link fs-5 dropdown-toggle text-dark" data-bs-toggle="dropdown">게시판</a>
                   <div class="dropdown-menu">
                     <a href="./coordinationBoard.html" class="dropdown-item">코디 게시판</a>
-                    <a href="./faq.html" class="dropdown-item">FAQ</a>
+                    <!-- <a href="./faq.html" class="dropdown-item">FAQ</a> -->
                     <a href="./qna.html" class="dropdown-item">Q&A</a>
                     <!-- <a href="./review.html" class="dropdown-item">상품 후기</a> -->
                     <a href="./announcement.html" class="dropdown-item">공지사항</a>
@@ -51,7 +51,9 @@
           </div>
           <div class="short-div d-flex justify-content-between navbar-nav">
             <div class="d-flex">
-              <a class="nav-link ms-4 me-2 text-dark" href="shop.html">BEST</a>
+              <a class="nav-link ms-4 text-dark" href="shop.html">여성</a>
+              <a class="nav-link ms-2 text-dark" href="shop.html">남성</a>
+              <a class="nav-link ms-2 text-dark" href="shop.html">BEST</a>
               <a class="nav-link me-2 text-dark" href="shop.html">상의</a>
               <a class="nav-link me-2 text-dark" href="shop.html">아우터</a>
               <a class="nav-link me-2 text-dark" href="shop.html">바지</a>
@@ -88,8 +90,8 @@
     <main style="margin-top: 8rem; width: 98%; margin-left: auto; margin-right: auto">
       <!-- <img src="./refer/main3.jpg" style="width: 100%; height: 100%;" alt=""> -->
       <div class="d-flex">
-        <a href="" class="mainImg_parent main1_width">
-          <img src="./refer/mainImg/model1.jpg" class="mainImg1 me-4" alt="">
+        <a href="" class="mainImg_parent main1_width me-1">
+          <img src="./refer/mainImg/model1.jpg" class="mainImg1" alt="">
           <div class="mainImg1_text">
             <div style="font-size: 6rem;" >TEST OFF</div>
             <div class="text-center" style="font-size: 3rem;" >-86%</div>
@@ -117,7 +119,7 @@
         Top Ranking
         <a href="" class="align-items-bottom" style="font-size: 0.8rem; text-decoration-line: none; color: rgba(0, 0, 0, 0.5)">더보기</a>
       </div>
-      <div class="row row-cols-2 row-cols-md-5 g-4">
+      <!--<div class="row row-cols-2 row-cols-md-5 g-4">
         <a href="./item_info.html" class="col-2">
           <div class="card border-light h-100">
             <img src="./refer/clothes/top1.jpg" class="card-image-top" alt="" />
@@ -167,11 +169,19 @@
               <div class="card-text">가격</div>
             </div>
           </div>
-        </a>
+        </a> -->
       </div>
       <!-- carousel 적용 -->
-      <!-- <div class="" style=" margin-bottom: 6rem;">
-            <div id="carouselControlId" class="carousel slide" data-bs-ride="carousel">
+      <div class="" style="">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+              <!-- carousel indicator -->
+            <!-- <div class="carousel-indicators"> -->
+              <!-- 갯수만큼 넣으면 됨 -->
+              <!-- <button data-bs-target="#carouselId" data-bs-slide-to="0" class="active bg-black"></button>
+              <button data-bs-target="#carouselId" data-bs-slide-to="1" class="active bg-black"></button>
+              <button data-bs-target="#carouselId" data-bs-slide-to="2" class="active bg-black"></button> -->
+              <!-- data-bs-targets을 줘서 어떤것인지 암  active를 해야 작동함-->
+          <!-- </div> -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row row-cols-2 row-cols-md-5 g-4">
@@ -281,22 +291,22 @@
                             </a>
                         </div>
                     </div>
-                </div> -->
-      <!-- <button class="carousel-control-prev" data-bs-target="#carouselControlId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-bs-target="#carouselControlId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+                    <button class="carousel-control-prev" data-bs-target="#carouselId" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#carouselId" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
             </div>
-        </div> -->
+        </div>
 
       <!-- 코디 게시판 -->
       <div class="fs-3 mt-5 mb-3">
         코디
         <a href="coordinationBoard.html" class="align-items-bottom" style="font-size: 0.8rem; text-decoration-line: none; color: rgba(0, 0, 0, 0.5)">더보기</a>
       </div>
-      <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
         <a href="./coordination.html" class="col">
           <div class="card border-light h-100">
             <img src="./refer/coordination/model1.jpg" class="card-image" alt="" />
@@ -338,30 +348,7 @@
           </div>
         </a>
       </div>
-      <div class="" style="margin-top: 10rem; margin-bottom: 6rem">
-        <div id="carouselControlId" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="w-100" src="./refer/carousel_Img/carousel1.jpg" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img class="w-100" src="./refer/carousel_Img/carousel2.jpg" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img class="w-100" src="./refer/carousel_Img/carousel3.jpg" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img class="w-100" src="./refer/carousel_Img/carousel4.jpg" alt="" />
-            </div>
-          </div>
-          <button class="carousel-control-prev" data-bs-target="#carouselControlId" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" data-bs-target="#carouselControlId" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
+
     </main>
 
     <footer class="border-top p-5 text-secondary bg-light" style="font-size: 0.8rem">
