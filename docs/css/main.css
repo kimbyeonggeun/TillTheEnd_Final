@@ -15,9 +15,18 @@ a {
 
 .mainImg1 {
     height: 70rem;
-    width: 70rem;
+    width: 100%;
     object-fit: cover;
 
+}
+
+.main1_width {
+    width: 40%;
+    margin-right: 2.5rem;
+}
+
+.main2_width {
+    width: 30%;
 }
 
 .mainImg_parent {
@@ -25,7 +34,7 @@ a {
 }
 
 .mainImg2 {
-    width: 40rem;
+    width: 100%;
     height: 70rem;
     object-fit: cover;
 }
