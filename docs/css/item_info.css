@@ -65,3 +65,11 @@ select {
   outline: none;
   appearance: none;
 }
+
+#left-column a {
+  text-decoration-line: none;
+  color: black;
+}
+#left-column {
+  width: 13%;
+}
