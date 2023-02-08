@@ -1,4 +1,4 @@
-#back,
+#back a,
 #id,
 #date {
   color: gray;
@@ -17,4 +17,8 @@
 
 main {
   margin-top: 60px;
+}
+
+#back {
+  margin-bottom: 15%;
 }

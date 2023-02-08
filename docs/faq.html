@@ -87,12 +87,21 @@
     </div>
     <!-- 헤더 여기까지 복사해야함 -->
     <main style="margin-top: 160px" class="container">
-      <div id="head" class="">FAQ</div>
-      <div id="category" class="mt-2 mb-2">
-        <a href="">전체</a>
-        <a href="">교환/반품/수선</a>
-        <a href="">주문/취소</a>
-        <a href="">기타</a>
+      <div id="head"><a href="./qna.html" class="me-4">Q&A</a> <a href="" class="fw-bold">FAQ</a></div>
+      <div id="category" class="mt-2 mb-2 d-flex" style="justify-content: space-between">
+        <div>
+          <a href="">전체</a>
+          <a href="">교환/반품/수선</a>
+          <a href="">주문/취소</a>
+          <a href="">기타</a>
+        </div>
+        <!-- search -->
+        <div id="search">
+          <input type="text" placeholder value fw-filter fw-msg fw-label />
+          <a href="" style="color: black; height: 360px">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+        </div>
       </div>
       <table class="table table-hover text-center mt-2">
         <tbody>
@@ -127,7 +136,7 @@
         </tbody>
       </table>
       <!-- pagination -->
-      <div class="container d-flex justify-content-center mt-4">
+      <div class="container d-flex justify-content-center mt-4" id="pagination">
         <nav aria-label="Page navigation example" class="">
           <ul class="pagination pagination-sm">
             <li class="page-item">
@@ -145,13 +154,6 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <!-- search -->
-      <div id="search">
-        <input type="text" placeholder value fw-filter fw-msg fw-label />
-        <a href="" style="color: black; height: 360px">
-          <span class="material-symbols-outlined">search</span>
-        </a>
       </div>
     </main>
 
